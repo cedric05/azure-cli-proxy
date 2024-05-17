@@ -1,0 +1,28 @@
+- kind: 2
+  language: dothttp-vscode
+  value: |-
+    @name('resource-groups'): sub
+    GET "/resourcegroups"
+    ? "api-version"="2021-04-01"
+  outputs: []
+- kind: 2
+  language: dothttp-vscode
+  value: !<tag:yaml.org,2002:js/undefined> ''
+  outputs: []
+- kind: 2
+  language: dothttp-vscode
+  value: !<tag:yaml.org,2002:js/undefined> ''
+  outputs: []
+- kind: 2
+  language: dothttp-vscode
+  value: !<tag:yaml.org,2002:js/undefined> ''
+  outputs: []
+- kind: 2
+  language: dothttp-vscode
+  value: |-
+    @name('base')
+    GET "http://localhost:3000/"
+
+    @name('sub'):'base'
+    GET "http://localhost:3000/subscriptions/{{subscription_id}}"
+  outputs: []
