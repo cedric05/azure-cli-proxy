@@ -4,6 +4,19 @@ This is a simple proxy for Azure ARM that allows you to make REST calls without 
 
 ## How to Use
 
+## Installation
+
+### Cargo Install
+1. Install `azure-cli-proxy` by running the following command:
+
+    ```shell
+    cargo install azure-cli-proxy
+
+2. run `azure-cli-proxy`
+
+
+### git clone
+
 1. Clone the repository:
     ```shell
     git clone https://github.com/cedric05/azure-cli-proxy

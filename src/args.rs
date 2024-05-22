@@ -15,4 +15,8 @@ pub struct Args {
     /// expects a valid ip address
     #[clap(short, long, default_value = "127.0.0.1:3000")]
     pub listen_addr: String,
+
+    /// Azure scope
+    #[clap(short, long)]
+    pub scope: Vec<String>,
 }

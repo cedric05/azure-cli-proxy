@@ -1,3 +1,3 @@
-- [ ] Replace reqwest with hyper
-- [ ] Add multiple scopes
-- [ ] Setup CI
+- [x] Replace reqwest with hyper
+- [x] Add multiple scopes
+- [x] Setup CI

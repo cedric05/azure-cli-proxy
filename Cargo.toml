@@ -1,19 +1,22 @@
 [package]
 name = "azure-cli-proxy"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Shiva Prasanth <kesavarapu.siva@gmail.com>"]
 description = "Simple proxy to azure ARM"
 license = "MIT OR Apache-2.0"
 
 [dependencies]
-azure_core = "0.20.0"
-azure_identity ={version= "0.20.0"}
+azure_core = { version = "0.20.0", optional = false }
+azure_identity = { version = "0.20.0", optional = false }
 bytes = "1.6.0"
 clap = { version = "4.5.4", features = ["derive"] }
 http = "1.1.0"
 http-body-util = "0.1.1"
-hyper = { version = "1.3.1", features = ["full"] }
-hyper-util = {version="0.1.3", features=["tokio"]}
-reqwest = "0.12.4"
-tokio = { version = "1.37.0", features = ["full"] }
+hyper = { version = "1.3.1", features = ["client", "http1", "http2", "server"] }
+hyper-tls = "0.6.0"
+hyper-util = { version = "0.1.3", features = ["tokio"] }
+lazy_static = "1.4.0"
+log = "0.4.21"
+simple-logging = "2.0.2"
+tokio = { version = "1.37.0", features = ["rt-multi-thread", "net", "macros"]}
